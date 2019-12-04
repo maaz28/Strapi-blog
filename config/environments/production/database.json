@@ -1,0 +1,22 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "host": "ds127094.mlab.com",
+        "port": 27017,
+        "srv": "false",
+        "database": "plotter",
+        "username": "admin",
+        "password": "Plot2018!",
+        "ssl": "false",
+        "client": "mongo"
+      },
+      "options": {
+        "ssl": "false",
+        "authenticationDatabase": "plotter"
+      }
+    }
+  }
+}

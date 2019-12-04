@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "series",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "tmdbName": {
+      "type": "string"
+    },
+    "tmdbId": {
+      "type": "biginteger"
+    },
+    "blogs": {
+      "collection": "blogs",
+      "via": "series"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "movies",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "tmdbTitle": {
+      "type": "string"
+    },
+    "tmdbId": {
+      "type": "biginteger"
+    },
+    "blogs": {
+      "collection": "blogs",
+      "via": "movies"
+    }
+  }
+}

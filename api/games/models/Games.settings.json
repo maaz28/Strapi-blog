@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "games",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "_id": {
+      "type": "biginteger"
+    },
+    "blogs": {
+      "collection": "blogs",
+      "via": "games"
+    }
+  }
+}

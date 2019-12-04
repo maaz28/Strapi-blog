@@ -1,0 +1,48 @@
+{
+  "connection": "default",
+  "collectionName": "blogs",
+  "info": {
+    "name": "blogs",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "headerImage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "blogContent": {
+      "required": true,
+      "type": "text"
+    },
+    "user": {
+      "model": "user",
+      "via": "blog",
+      "plugin": "users-permissions"
+    },
+    "movies": {
+      "collection": "movies",
+      "via": "blogs",
+      "dominant": true
+    },
+    "series": {
+      "collection": "series",
+      "via": "blogs",
+      "dominant": true
+    },
+    "games": {
+      "collection": "games",
+      "via": "blogs",
+      "dominant": true
+    }
+  }
+}

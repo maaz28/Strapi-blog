@@ -1,16 +1,23 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "games",
   "info": {
     "name": "games",
     "description": ""
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ],
+    "idAttribute": "_id"
   },
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "igdbId": {
+      "type": "biginteger"
     },
     "_id": {
       "type": "biginteger"

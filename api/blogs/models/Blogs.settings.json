@@ -13,21 +13,22 @@
   },
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
+    },
+    "blogContent": {
+      "required": true,
+      "type": "text"
     },
     "headerImage": {
       "model": "file",
       "via": "related",
       "plugin": "upload"
     },
-    "blogContent": {
-      "required": true,
-      "type": "text"
-    },
-    "user": {
-      "model": "user",
-      "via": "blog",
-      "plugin": "users-permissions"
+    "games": {
+      "collection": "games",
+      "via": "blogs",
+      "dominant": true
     },
     "movies": {
       "collection": "movies",
@@ -39,10 +40,10 @@
       "via": "blogs",
       "dominant": true
     },
-    "games": {
-      "collection": "games",
+    "user": {
+      "model": "user",
       "via": "blogs",
-      "dominant": true
+      "plugin": "users-permissions"
     }
   }
 }
